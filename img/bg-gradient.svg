@@ -1,0 +1,19 @@
+<svg width="1920" height="1000" viewBox="0 0 1920 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="a1" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1920" height="1000">
+<rect width="1920" height="1000" fill="#F5F5F5"/>
+</mask>
+<g mask="url(#a1)">
+<circle opacity="0.2" cx="1646.5" cy="383.5" r="1427.5" fill="url(#p3)"/>
+<circle opacity="0.2" cx="376.5" cy="915.5" r="1186.5" fill="url(#p4)"/>
+</g>
+<defs>
+<radialGradient id="p3" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1646.5 383.5) rotate(90) scale(1427.5)">
+<stop stop-color="#0AF4CA"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="p4" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(376.5 915.5) rotate(90) scale(1186.5)">
+<stop stop-color="#0A68F4"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>
