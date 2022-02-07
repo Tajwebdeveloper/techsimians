@@ -11,12 +11,15 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 
-<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" defer></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js" defer></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" defer></script>
+    <script src="js/accordian.js" defer></script>
+    <script src="js/index.js" defer></script>
+  
     <title>Tech Simians</title>
   </head>
   <body>
@@ -330,33 +333,121 @@
       </div>
     </section>
     <section class="ourwork">
-
+      <h2 class="ourwork__title">Our work</h2>
+      <div class="ourwork__subtitle">We create products only on the basis of user experience and only covering the needs of the user.</div>
+      <div class="ourwork__row">
+        <div class="ourwork__item">
+          <div class="ourwork__img"></div>
+          <div class="ourwork__hover-text">View Project</div>
+        </div>
+        <div class="ourwork__item">
+          <div class="ourwork__img"></div>
+          <div class="ourwork__hover-text">View Project</div>
+        </div>
+        <div class="ourwork__item">
+          <div class="ourwork__img"></div>
+          <div class="ourwork__hover-text">View Project</div>
+        </div>
+        <div class="ourwork__item">
+          <div class="ourwork__img"></div>
+          <div class="ourwork__hover-text">View Project</div>
+        </div>
+      </div>
+      <div class="ourwork__row">
+          <div class="ourwork__item">
+            <div class="ourwork__img"></div>
+            <div class="ourwork__hover-text">View Project</div>
+          </div>
+          <div class="ourwork__item">
+            <div class="ourwork__img"></div>
+            <div class="ourwork__hover-text">View Project</div>
+          </div>
+          <div class="ourwork__item">
+            <div class="ourwork__img"></div>
+            <div class="ourwork__hover-text">View Project</div>
+          </div>
+          <div class="ourwork__item">
+            <div class="ourwork__img"></div>
+            <div class="ourwork__hover-text">View Project</div>
+          </div>
+      </div>
+      <a href="#" class="ourwork__cta">View all</a> 
     </section>
     <div class="testimonials">
       <!-- Slider main container -->
         <div class="swiper">
+          <div class="testimonials__heading">Testimonials</div>
+          <h2 class="testimonials__title">What some of  our clients say about us</h2>
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            ...
+            <div class="swiper-slide">
+              <div class="testimonial__item">
+                <div class="testimonial__text">By far the best team i’ve ever worked with. The truly understood the look I was going for and completely nailed it! I would highly recommend them as a company, you simply just won’t find any better team! </div>
+                <div class="testimonial__image"></div>
+                <div class="testimonial__name">Vishal Makadia</div>
+                <div class="testimonial__designation">Owner, SKD Constructions</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="testimonial__item">
+                    <div class="testimonial__text">By far the best team i’ve ever worked with. The truly understood the look I was going for and completely nailed it! I would highly recommend them as a company, you simply just won’t find any better team! </div>
+                    <div class="testimonial__image"></div>
+                    <div class="testimonial__name">Vishal Makadia</div>
+                    <div class="testimonial__designation">Owner, SKD Constructions</div>
+                  </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="testimonial__item">
+                    <div class="testimonial__text">By far the best team i’ve ever worked with. The truly understood the look I was going for and completely nailed it! I would highly recommend them as a company, you simply just won’t find any better team! </div>
+                    <div class="testimonial__image"></div>
+                    <div class="testimonial__name">Vishal Makadia</div>
+                    <div class="testimonial__designation">Owner, SKD Constructions</div>
+                  </div>
+            </div>
           </div>
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
 
-          <!-- If we need navigation buttons -->
           <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
           <div class="swiper-button-next"></div>
 
-          <!-- If we need scrollbar -->
-          <div class="swiper-scrollbar"></div>
         </div>
     </div>
     <section class="ourblog">
-        <h2 class="ourblog__title">our Blog</h2>
-        
+      <h2 class="ourblog__title">our Blog</h2>
+      <div class="accordion--wrapper">
+          <div class="accordion--trigger accordion--active">How To Enhance Motivation
+              for Better Business Leads?</div>
+          <div class="accordion--content accordion--active">
+            <div class="accordion-inner">
+                Follow these 7 Neuromarketing ways and measures to create an
+                astonishing impact in your upcoming marketing campaign. Read now!
+            </div>
+          </div>
+          <div class="accordion--trigger">7 Ways Neuromarketing Impact Marketing Campaign</div>
+          <div class="accordion--content">
+            <div class="accordion-inner">
+                Follow these 7 Neuromarketing ways and measures to create an
+                astonishing impact in your upcoming marketing campaign. Read now!
+            </div>
+          </div>
+          <div class="accordion--trigger">Can Good Design Grow Your Business And Customers?</div>
+          <div class="accordion--content">
+            <div class="accordion-inner">
+                Follow these 7 Neuromarketing ways and measures to create an
+                astonishing impact in your upcoming marketing campaign. Read now!
+            </div>
+        </div>
+      </div>
+
+      <div class="ourblog__animation">
+          <lottie-player
+          id="tenthLottie"
+          src=" https://assets2.lottiefiles.com/packages/lf20_nsj9zfuz.json"
+          style="width: 472px; height: 408px;"
+        ></lottie-player>
+         
+      </div>
     </section>
     <section class="connect">
         <div class="connect__title">Stay ahead of the curve and create a measurable impact on your business.</div>
@@ -365,103 +456,6 @@
     <footer>
 
     </footer>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const swiper = new Swiper('.swiper', {
-          speed: 400,
-          spaceBetween: 100,
-        });
-        LottieInteractivity.create({
-          mode: "scroll",
-          player: "#firstLottie",
-          actions: [
-            {
-              visibility: [0.2, 1],
-              type: "play"
-            }
-          ]
-        });
-        LottieInteractivity.create({
-          mode: "scroll",
-          player: "#secondLottie",
-          actions: [
-            {
-              visibility: [0.2, 1],
-              type: "play"
-            }
-          ]
-        });
-        LottieInteractivity.create({
-          mode: "scroll",
-          player: "#thirdLottie",
-          actions: [
-            {
-              visibility: [0.2, 1],
-              type: "play"
-            }
-          ]
-        });
-        LottieInteractivity.create({
-          mode: "scroll",
-          player: "#fourthLottie",
-          actions: [
-            {
-              visibility: [0.2, 1],
-              type: "play"
-            }
-          ]
-        });
-        LottieInteractivity.create({
-          mode: "scroll",
-          player: "#fifthLottie",
-          actions: [
-            {
-              visibility: [0.2, 1],
-              type: "play"
-            }
-          ]
-        });
-        LottieInteractivity.create({
-          mode: "scroll",
-          player: "#sixthLottie",
-          actions: [
-            {
-              visibility: [0.2, 1],
-              type: "play"
-            }
-          ]
-        });
-        LottieInteractivity.create({
-          mode: "scroll",
-          player: "#seventhLottie",
-          actions: [
-            {
-              visibility: [0.2, 1],
-              type: "play"
-            }
-          ]
-        });
-        LottieInteractivity.create({
-          mode: "scroll",
-          player: "#eigthLottie",
-          actions: [
-            {
-              visibility: [0.2, 1],
-              type: "play"
-            }
-          ]
-        });
-        LottieInteractivity.create({
-          mode: "scroll",
-          player: "#ninthLottie",
-          actions: [
-            {
-              visibility: [0.2, 1],
-              type: "play"
-            }
-          ]
-        });
-      });
-    </script>
+    
   </body>
 </html>

@@ -321,3 +321,32 @@ h6 {
   font-weight: 500;
   padding-bottom: 15px;
 }
+
+.accordion--wrapper {
+  border: 1px solid #ddd;
+  border-top: none;
+}
+.accordion--wrapper .accordion--trigger {
+  border-top: 1px solid #ddd;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+.accordion--wrapper .accordion--trigger:hover,
+.accordion--wrapper .accordion--trigger:active,
+.accordion--wrapper .accordion--trigger:focus {
+  background-color: #f3f4f5;
+}
+.accordion--wrapper .accordion--trigger.accordion--active {
+  background-color: #f3f4f5;
+}
+.accordion--wrapper .accordion--content {
+  overflow: hidden;
+  margin-bottom: 0;
+}
+.accordion--wrapper .accordion--content.accordion--active .accordion-inner {
+  border-top: 1px solid #ddd;
+}
+.accordion--wrapper .accordion--content .accordion-inner {
+  padding: 10px 20px;
+}
