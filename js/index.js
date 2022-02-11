@@ -3,9 +3,10 @@ document.addEventListener("DOMContentLoaded", function () {
     speed: 400,
     spaceBetween: 100,
     pagination: {
-      el: ".swiper-pagination"
+      el: ".swiper-pagination",
+      clickable: true
     },
-
+    effect: "fade",
     // Navigation arrows
     navigation: {
       nextEl: ".swiper-button-next",

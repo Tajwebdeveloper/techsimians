@@ -375,9 +375,16 @@
     </section>
     <div class="testimonials">
       <!-- Slider main container -->
-        <div class="swiper">
-          <div class="testimonials__heading">Testimonials</div>
+        <div class="swiper testimonials__row">
+          <div class="testimonials__left">
+            <div class="testimonials__heading">Testimonials</div>
           <h2 class="testimonials__title">What some of  our clients say about us</h2>
+          <div class="testimonial__navigation">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next"></div>
+          </div>
+        </div>
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
@@ -391,7 +398,7 @@
             </div>
             <div class="swiper-slide">
                 <div class="testimonial__item">
-                    <div class="testimonial__text">By far the best team i’ve ever worked with. The truly understood the look I was going for and completely nailed it! I would highly recommend them as a company, you simply just won’t find any better team! </div>
+                    <div class="testimonial__text">fdgsdfgsdfg</div>
                     <div class="testimonial__image"></div>
                     <div class="testimonial__name">Vishal Makadia</div>
                     <div class="testimonial__designation">Owner, SKD Constructions</div>
@@ -399,24 +406,22 @@
             </div>
             <div class="swiper-slide">
                 <div class="testimonial__item">
-                    <div class="testimonial__text">By far the best team i’ve ever worked with. The truly understood the look I was going for and completely nailed it! I would highly recommend them as a company, you simply just won’t find any better team! </div>
+                    <div class="testimonial__text">sdafdsfsdfds eerre</div>
                     <div class="testimonial__image"></div>
                     <div class="testimonial__name">Vishal Makadia</div>
                     <div class="testimonial__designation">Owner, SKD Constructions</div>
                   </div>
             </div>
           </div>
-
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-next"></div>
-
         </div>
     </div>
     <section class="ourblog">
-      <h2 class="ourblog__title">our Blog</h2>
-      <div class="accordion--wrapper">
-          <div class="accordion--trigger accordion--active">How To Enhance Motivation
+      
+      <div class="ourblog__row">
+        <div class="accordion--wrapper">
+            <h2 class="ourblog__title">our Blog</h2>
+          <div class="accordion--trigger accordion--active accordion--trigger-first">
+              <svg width="24" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m3.07 3.93 8.48 8.49 8.49-8.49" stroke="#0047FF" stroke-width="6" stroke-linecap="round"/></svg>How To Enhance Motivation
               for Better Business Leads?</div>
           <div class="accordion--content accordion--active">
             <div class="accordion-inner">
@@ -424,14 +429,14 @@
                 astonishing impact in your upcoming marketing campaign. Read now!
             </div>
           </div>
-          <div class="accordion--trigger">7 Ways Neuromarketing Impact Marketing Campaign</div>
+          <div class="accordion--trigger"><svg width="24" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m3.07 3.93 8.48 8.49 8.49-8.49" stroke="#0047FF" stroke-width="6" stroke-linecap="round"/></svg>7 Ways Neuromarketing Impact Marketing Campaign</div>
           <div class="accordion--content">
             <div class="accordion-inner">
                 Follow these 7 Neuromarketing ways and measures to create an
                 astonishing impact in your upcoming marketing campaign. Read now!
             </div>
           </div>
-          <div class="accordion--trigger">Can Good Design Grow Your Business And Customers?</div>
+          <div class="accordion--trigger"><svg width="24" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m3.07 3.93 8.48 8.49 8.49-8.49" stroke="#0047FF" stroke-width="6" stroke-linecap="round"/></svg>Can Good Design Grow Your Business And Customers?</div>
           <div class="accordion--content">
             <div class="accordion-inner">
                 Follow these 7 Neuromarketing ways and measures to create an
@@ -447,14 +452,63 @@
           style="width: 472px; height: 408px;"
         ></lottie-player>
          
-      </div>
+      </div></div>
     </section>
     <section class="connect">
         <div class="connect__title">Stay ahead of the curve and create a measurable impact on your business.</div>
         <a href="#" class="connect__btn">Connect</a>
     </section>
-    <footer>
-
+    <footer class="footer">
+      <div class="footer__row">
+        <div class="footer__col footer__col--1">
+          <img src="img/logo.png" alt="">
+          <div class="footer__social">
+            <a href="#" target="_blank" class="footer__social-icon"><img src="img/facebook.svg" alt="Facebook"></a>
+            <a href="#" target="_blank" class="footer__social-icon"><img src="img/youtube.svg" alt="Youtube"></a>
+            <a href="#" target="_blank" class="footer__social-icon"><img src="img/twitter.svg" alt="Twitter"></a>
+            <a href="#" target="_blank" class="footer__social-icon"><img src="img/instagram.svg" alt="Instagram"></a>
+            <a href="#" target="_blank" class="footer__social-icon"><img src="img/linkedin.svg" alt="LinkedIn"></a>
+          </div>
+          <div class="footer__copyright">©Tech Simians.<br>All Rights Reserved 2021</div>
+        </div>
+        <div class="footer__col footer__col--2">
+          <h3 class="footer__title">Services</h3>
+          <ul class="footer__menu">
+            <li class="footer__menu-item"><a href="">Development</a></li>
+            <li class="footer__menu-item"><a href="">Designing</a></li>
+            <li class="footer__menu-item"><a href="">Enterprice Solutions</a></li>
+            <li class="footer__menu-item"><a href="">Cloud Solutions</a></li>
+            <li class="footer__menu-item"><a href="">IT Consulting</a></li>
+          </ul>
+        </div>
+        <div class="footer__col footer__col--3">
+          <h3 class="footer__title">Know Us</h3>
+          <ul class="footer__menu">
+            <li class="footer__menu-item"><a href="">About Us</a></li>
+            <li class="footer__menu-item"><a href="">Work</a></li>
+            <li class="footer__menu-item"><a href="">Career</a></li>
+          </ul>
+        </div>
+        <div class="footer__col footer__col--4">
+          <h3 class="footer__title">Contact</h3>
+          <address class="footer__address">
+            <svg width="16" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 0a8 8 0 0 0-8 8c0 7 7 12 8 12s8-5 8-12a8 8 0 0 0-8-8Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Z" fill="#646464"/>
+            </svg>
+            302, Options Primo, MIDC
+            Industry Area, Andheri East,
+            Mumbai, India.
+          </address>
+          <div class="footer__phone"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m15 11-4-2a1 1 0 0 0-1 0l-2 2-3-3 2-2a1 1 0 0 0 0-1L5 1a1 1 0 0 0-1-1 5 5 0 0 0-4 4c0 7 5 12 12 12a5 5 0 0 0 4-4 1 1 0 0 0-1-1Z" fill="#646464"/></svg><a href="tel:+918080425120">+91 808 042 5120</a></div>
+          <div class="footer__email"><svg width="19" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 0H1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V1a1 1 0 0 0 0-1ZM7 7l-6 5V2l6 5Zm1 1 1 1a1 1 0 0 0 1 0l1-1 5 5H3l5-5Zm4-1 5-5v10l-5-5Z" fill="#646464"/></svg><a href="mailto:info@techsimians.com">info@techsimians.com</a></div>
+        </div>
+      </div>
+      <div class="footer__bottom-links">
+        <div class="footer__bottom-links-container">
+            <a href="#">Terms of service</a>
+            <a href="#">Privacy policy</a>
+        </div>
+      </div>
     </footer>
     
   </body>
