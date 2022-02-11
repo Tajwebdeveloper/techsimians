@@ -1,3 +1,5 @@
+var controller = new ScrollMagic.Controller();
+
 document.addEventListener("DOMContentLoaded", function () {
   const swiper = new Swiper(".swiper", {
     speed: 400,
@@ -13,6 +15,19 @@ document.addEventListener("DOMContentLoaded", function () {
       prevEl: ".swiper-button-prev"
     }
   });
+
+  // create a scene
+
+  var scene = new ScrollMagic.Scene({
+    triggerElement: "#trigger1",
+    duration: 900
+  })
+    .on("enter", function (e) {
+      let player = document.querySelector("#fifthLottie");
+      player.play();
+    })
+    .addTo(controller);
+
   LottieInteractivity.create({
     mode: "scroll",
     player: "#firstLottie",
@@ -53,16 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     ]
   });
-  LottieInteractivity.create({
-    mode: "scroll",
-    player: "#fifthLottie",
-    actions: [
-      {
-        visibility: [0.2, 1],
-        type: "play"
-      }
-    ]
-  });
+
   LottieInteractivity.create({
     mode: "scroll",
     player: "#sixthLottie",
