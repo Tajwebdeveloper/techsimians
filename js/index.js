@@ -28,6 +28,40 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     .addTo(controller);
 
+  // anime({
+  //   targets: ".svg__sortby",
+  //   translateY: ["-240px", "0px"],
+  //   opacity: ["0", "1"],
+  //   speed: 200
+
+  // });
+  anime({
+    targets: ".svg__top",
+    opacity: ["0", "1"],
+    translateY: ["-100px", "0px"],
+    delay: anime.stagger(200) // increase delay by 100ms for each elements.
+  });
+
+  anime({
+    targets: ".banner__shadowtext",
+    letterSpacing: ["5em", "0.02em"],
+    opacity: ["0", "0.2"],
+    easing: "easeInOutQuad",
+    delay: 100 // increase delay by 100ms for each elements.
+  });
+  anime({
+    targets: ".banner__text",
+    opacity: ["0", "1"],
+    scaleY: ["0", "1"],
+    easing: "easeInOutQuad",
+    delay: 100 // increase delay by 100ms for each elements.
+  });
+  anime({
+    targets: ".banner__subtext",
+    opacity: ["0", "1"],
+    easing: "easeInOutQuad",
+    delay: 500 // increase delay by 100ms for each elements.
+  });
   LottieInteractivity.create({
     mode: "scroll",
     player: "#firstLottie",
