@@ -1,14 +1,39 @@
 var controller = new ScrollMagic.Controller();
 
 document.addEventListener("DOMContentLoaded", function () {
+  document
+    .querySelector(".navigation__button")
+    .addEventListener("click", (e) => {
+      e.currentTarget.classList.toggle("open");
+      document.querySelector(".navigation__menu").classList.toggle("open");
+      anime({
+        targets: ".navigation__menu.closed",
+        translateX: "100%",
+        easing: "easeInOutQuad",
+        duration: 200 // increase delay by 100ms for each elements.
+      });
+      anime({
+        targets: ".navigation__menu.open",
+        translateX: "0px",
+        easing: "easeInOutQuad",
+        duration: 200 // increase delay by 100ms for each elements.
+      });
+    });
+
   const swiper = new Swiper(".swiper", {
     speed: 400,
     spaceBetween: 100,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true
+
+    breakpoints: {
+      // when window width is >= 320px
+      992: {
+        effect: "fade",
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        }
+      }
     },
-    effect: "fade",
     // Navigation arrows
     navigation: {
       nextEl: ".swiper-button-next",
