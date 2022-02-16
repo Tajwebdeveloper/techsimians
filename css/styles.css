@@ -1,6 +1,7 @@
 :root {
   --gradient: linear-gradient(90deg, #0047ff 0%, #0af4ca 100%);
   --tab-break: 992px;
+  --color-primary: #0047ff;
 }
 
 body {
@@ -35,16 +36,15 @@ h6 {
 }
 /* Common */
 
+/* Heading */
 .heading {
   font-weight: bold;
   font-size: 20px;
   line-height: 30px;
-  /* identical to box height */
-
   text-align: center;
   text-transform: uppercase;
 
-  color: #0047ff;
+  color: var(--color-primary);
 }
 @media (min-width: 992px) {
   .heading {
@@ -52,6 +52,8 @@ h6 {
     line-height: 75px;
   }
 }
+
+/* Subheading */
 .subheading {
   font-weight: 600;
   font-size: 12px;
@@ -66,6 +68,32 @@ h6 {
     line-height: 42px;
     margin: 0 auto 130px;
   }
+}
+
+/* Buttons */
+.button {
+  border-radius: 999px;
+  display: inline-flex;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  padding: 0.375rem 1.125rem;
+  cursor: pointer;
+}
+.button--blue {
+  color: white;
+  background: var(--color-primary);
+}
+.button--white {
+  color: black;
+  background: white;
+}
+/* Form Inputs */
+
+.inner-page {
+  padding-top: 144px;
 }
 
 .header {
@@ -991,3 +1019,94 @@ h6 {
 .svg__top {
   opacity: 0;
 }
+
+/* Page specific CSS */
+
+/* 1. About Us */
+.team {
+  padding: 50px 36px;
+}
+.team__row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 125px);
+  justify-items: space-between;
+  grid-gap: 30px;
+}
+
+/* 2. Job Opening */
+.job {
+}
+.job__title {
+}
+.job__content {
+}
+.job__cta {
+}
+
+/* 3. Services */
+.service {
+}
+.service__img {
+}
+.service__content {
+}
+
+.whatweserve {
+}
+.whatweserver__title {
+}
+.whatweserve__row {
+}
+.whatweserve__item {
+}
+.whatweserve__item-title {
+}
+.whatweserver__item-content {
+}
+
+/* 4. Our Work */
+.workgrid {
+}
+.workgrid__item {
+}
+.workgrid__img {
+}
+.workgrid__item-title {
+}
+.workgrid__item-text {
+}
+.workgrid__item-cta {
+}
+
+/* 5. Single Project */
+
+.project {
+}
+.project__title {
+}
+.project__text {
+}
+.project__grid {
+}
+.project__grid-item {
+}
+
+.alsolike {
+}
+.alsolike__title {
+}
+.alsolike__row {
+}
+.alsolike__item {
+}
+.alsolike__item-title {
+}
+.alsolike__item-text {
+}
+.alsolike__item-cta {
+}
+
+/* 6. Careers */
+
+/* 7. Contact us */
+/* 8. blog */
