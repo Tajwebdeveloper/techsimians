@@ -1433,6 +1433,14 @@ h6 {
 }
 /* 4. Our Work */
 .workgrid {
+  padding: 0 16px;
+}
+.workgrid__row {
+  display: flex;
+  margin-top: 54px;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 .workgrid__item {
 }
