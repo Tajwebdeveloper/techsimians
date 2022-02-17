@@ -1440,17 +1440,36 @@ h6 {
   margin-top: 54px;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  text-align: center;
+  gap: 24px;
 }
 .workgrid__item {
+  position: relative;
 }
 .workgrid__img {
 }
 .workgrid__item-title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 4px;
 }
 .workgrid__item-text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height */
+
+  text-align: center;
 }
 .workgrid__item-cta {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
 }
 
 /* 5. Single Project */
