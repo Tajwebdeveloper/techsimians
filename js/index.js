@@ -60,6 +60,20 @@ document.addEventListener("DOMContentLoaded", function () {
   //   speed: 200
 
   // });
+
+  const footerAccordian = document.querySelector(".footer__accordian");
+  if (footerAccordian) {
+    footerAccordian
+      .querySelectorAll(".footer__accordian-title")
+      .forEach((e) => {
+        e.addEventListener("click", (title) => {
+          title.currentTarget
+            .closest(".footer__accordian-item")
+            .classList.toggle("open");
+        });
+      });
+  }
+
   anime({
     targets: ".svg__top",
     opacity: ["0", "1"],
