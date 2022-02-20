@@ -55,28 +55,40 @@
       </section>
       <section class="career">
         <h1 class="heading">Let’s get in touch</h1>
-        <div class="career__form">
+        <form class="career__form">
           <div class="input career__name-input">
-            <input class="input__field" placeholder="name" />
+            <input class="input__field" placeholder="Name" required />
             <div class="input__message"></div>
           </div>
           <div class="input career__email-input">
-            <input class="input__field" placeholder="email" type="email" />
+            <input
+              class="input__field"
+              placeholder="Email"
+              type="email"
+              required
+            />
             <div class="input__message"></div>
           </div>
           <div class="input career__phone-input">
-            <input class="input__field" placeholder="Phone" type="tel" />
+            <input
+              class="input__field"
+              placeholder="Phone"
+              type="tel"
+              required
+            />
             <div class="input__message"></div>
           </div>
           <div class="input career__file-input">
-            <input class="input__field" placeholder="name" type="file" />
+            <input class="input__field" type="file" />
             <div class="input__message"></div>
           </div>
           <div class="input career__message-input">
             <textarea
               name=""
               id=""
+              class="input__field input__field--textarea"
               placeholder="Message"
+              required
               cols="30"
               rows="10"
             ></textarea>
@@ -85,7 +97,7 @@
           <div class="career__form-submit">
             <button type="submit" class="button button--blue">SEND</button>
           </div>
-        </div>
+        </form>
       </section>
       <section class="openings">
         <div class="opening__title">Job Openings</div>
