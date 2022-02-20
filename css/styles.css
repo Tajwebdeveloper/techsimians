@@ -1562,7 +1562,8 @@ h6 {
 .workgrid__item {
   position: relative;
 }
-.workgrid__img {
+.workgrid__img img {
+  width: 100%;
 }
 .workgrid__item-title {
   font-weight: bold;
@@ -1578,32 +1579,89 @@ h6 {
 
   text-align: center;
 }
+
 .workgrid__item-cta {
   position: absolute;
   inset: 0;
-  background: rgba(255, 255, 255, 0.2);
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
-  display: none;
+  background: rgba(0, 0, 0, 0.4);
+  height: calc(100% - 48px);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
-
+.workgrid__item:hover .workgrid__item-cta {
+  display: flex;
+}
+@media (min-width: 992px) {
+  .workgrid__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 78px;
+    grid-column-gap: 26px;
+  }
+}
 /* 5. Single Project */
 
 .project {
 }
 .project__title {
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
 }
 .project__text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  padding: 10px 20px 40px;
 }
 .project__grid {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 1fr 1fr;
 }
 .project__grid-item {
 }
+.project__grid-item:first-child,
+.project__grid-item:last-child {
+  grid-column: span 2;
+}
+.project__grid-item img {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .project__grid {
+    grid-gap: 16px;
+  }
+  .project__title {
+    font-size: 22px;
+    line-height: 33px;
+    padding-top: 40px;
+  }
+  .project__text {
+    font-size: 18px;
+    line-height: 27px;
+    padding: 10px 0 160px;
+  }
+}
 
 .alsolike {
+  padding: 60px 0 48px;
+  background-image: url("data:image/svg+xml,%3Csvg width='1920' height='900' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='.2'%3E%3Cmask id='a' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='1920' height='900'%3E%3Cpath d='M0 0h1920v900H0V0Z' fill='%23F5F5F5'/%3E%3C/mask%3E%3Cg mask='url(%23a)'%3E%3Cellipse cx='737.5' cy='645.1' rx='833.5' ry='682' fill='url(%23b)'/%3E%3Cellipse cx='1287.5' cy='645.1' rx='833.5' ry='682' fill='url(%23c)'/%3E%3C/g%3E%3C/g%3E%3Cdefs%3E%3CradialGradient id='b' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='matrix(0 681.955 -833.5 0 738 645)'%3E%3Cstop stop-color='%230047FF'/%3E%3Cstop offset='1' stop-color='%23fff' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='matrix(0 681.955 -833.5 0 1288 645)'%3E%3Cstop stop-color='%230AF4CA'/%3E%3Cstop offset='1' stop-color='%23fff' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3C/svg%3E");
+}
+.alsolike .workgrid__row {
+  margin-top: 0;
 }
 .alsolike__title {
+  font-size: 16px;
+  line-height: 50px;
+  text-transform: uppercase;
+
+  color: #0047ff;
 }
 .alsolike__row {
 }
@@ -1615,7 +1673,17 @@ h6 {
 }
 .alsolike__item-cta {
 }
-
+@media (min-width: 992px) {
+  .alsolike {
+    padding-top: 140px;
+  }
+  .alsolike__title {
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+    margin-bottom: 38px;
+  }
+}
 /* 6. Careers */
 
 /* 7. Contact us */
