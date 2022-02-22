@@ -1,4 +1,4 @@
-var controller = new ScrollMagic.Controller();
+// var controller = new ScrollMagic.Controller();
 
 document.addEventListener("DOMContentLoaded", function () {
   document
@@ -21,13 +21,14 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
   const swiper = new Swiper(".swiper", {
-    speed: 400,
+    speed: 600,
     spaceBetween: 100,
-
+    effect: "coverflow",
     breakpoints: {
       // when window width is >= 320px
       992: {
         effect: "fade",
+
         pagination: {
           el: ".swiper-pagination",
           clickable: true
@@ -43,15 +44,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // create a scene
 
-  var scene = new ScrollMagic.Scene({
-    triggerElement: "#trigger1",
-    duration: 900
-  })
-    .on("enter", function (e) {
-      let player = document.querySelector("#fifthLottie");
-      player.play();
-    })
-    .addTo(controller);
+  // var scene = new ScrollMagic.Scene({
+  //   triggerElement: "#trigger1",
+  //   duration: 900
+  // })
+  //   .on("enter", function (e) {
+  //     let player = document.querySelector("#fifthLottie");
+  //     player.play();
+  //   })
+  //   .addTo(controller);
 
   // anime({
   //   targets: ".svg__sortby",
@@ -141,7 +142,16 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     ]
   });
-
+  LottieInteractivity.create({
+    mode: "scroll",
+    player: "#fifthLottie",
+    actions: [
+      {
+        visibility: [0.2, 1],
+        type: "play"
+      }
+    ]
+  });
   LottieInteractivity.create({
     mode: "scroll",
     player: "#sixthLottie",
