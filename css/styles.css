@@ -393,45 +393,31 @@ input[type="file" i]::-webkit-file-upload-button {
   flex-direction: column;
   gap: 10px;
 }
-@media (min-width: 992px) {
-  .navigation__menu {
-    flex-direction: row;
-    position: relative;
-    box-shadow: none;
-    height: auto;
-    background: transparent;
-    width: auto;
-    padding: 0;
-    align-items: center;
-    transform: translateX(0) !important;
-  }
-  .navigation__menu > ul {
-    flex-direction: row;
-    margin-right: 30px;
-  }
-  .navigation__button,
-  .navigation__contact,
-  .navigation__title {
-    display: none;
-  }
-  .navigation__item {
-    position: relative;
-    font-weight: 500;
-    margin: 0 20px;
-  }
-}
 
 .navigation__dropdown {
   display: none;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
+  background: #fff;
+  font-size: 12px;
+  line-height: 24px;
+  color: #444;
+  padding: 8px;
+}
+.navigation__dropdown li:hover {
+  color: var(--color-primary);
 }
 .navigation__item--with-dropdown > a:after {
-  content: ".";
+  content: "";
+  width: 13px;
+  height: 10px;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 1 6 5 2 1' stroke='%230047FF' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+  display: inline-flex;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0 3px;
+  margin-left: 6px;
 }
-.navigation__item--with-dropdown:hover .navigation__dropdown {
+.navigation__item--with-dropdown:hover .navigation__dropdown,
+.navigation__item--with-dropdown:focus-within .navigation__dropdown {
   display: block;
 }
 .navigation__cta {
@@ -453,6 +439,44 @@ input[type="file" i]::-webkit-file-upload-button {
 }
 .logo img {
   display: flex;
+}
+@media (min-width: 992px) {
+  .navigation__menu {
+    flex-direction: row;
+    position: relative;
+    box-shadow: none;
+    height: auto;
+    background: transparent;
+    width: auto;
+    padding: 0;
+    align-items: center;
+    transform: translateX(0) !important;
+  }
+  .navigation__menu > ul {
+    flex-direction: row;
+    margin-right: 30px;
+  }
+  .navigation__dropdown {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 16px;
+    line-height: 24px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+    min-width: 200px;
+    border-radius: 16px;
+  }
+  .navigation__button,
+  .navigation__contact,
+  .navigation__title {
+    display: none;
+  }
+  .navigation__item {
+    position: relative;
+    font-weight: 500;
+    margin: 0 20px;
+  }
 }
 
 .banner {
