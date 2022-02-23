@@ -1,6 +1,15 @@
 // var controller = new ScrollMagic.Controller();
 
 document.addEventListener("DOMContentLoaded", function () {
+  window.addEventListener("scroll", () => {
+    if (window.innerWidth < 992) {
+      if (window.scrollY > 100) {
+        document.querySelector(".header").classList.add("isFixed");
+      } else {
+        document.querySelector(".header").classList.remove("isFixed");
+      }
+    }
+  });
   document
     .querySelector(".navigation__button")
     .addEventListener("click", (e) => {
