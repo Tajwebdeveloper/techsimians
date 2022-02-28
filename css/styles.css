@@ -798,8 +798,8 @@ main.container {
 .whychooseus__icon {
   grid-area: icon;
   position: relative;
-  width: 120px;
-  height: 120px;
+  width: 90px;
+  height: 90px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -826,7 +826,13 @@ main.container {
   padding-bottom: 15px;
   grid-area: content;
 }
-
+.whychooseus__item img {
+  width: 40px;
+}
+.whychooseus__item-text {
+  font-size: 14px;
+  line-height: 20px;
+}
 @media (min-width: 992px) {
   .whychooseus {
     padding: 98px 20px 140px;
@@ -841,6 +847,16 @@ main.container {
   .whychooseus__item {
     width: 386px;
     display: block;
+  }
+  .whychooseus__icon {
+    width: 120px;
+    height: 120px;
+  }
+  .whychooseus__item img {
+    width: auto;
+  }
+  .whychooseus__item-text {
+    font-size: 16px;
   }
   .whychooseus__item-title {
     font-size: 40px;
@@ -1110,6 +1126,12 @@ main.container {
 .ourblog {
   margin-bottom: 50px;
   padding: 0 32px;
+}
+.ourblog a {
+  font-weight: 600;
+  line-height: 26px;
+  color: var(--color-primary);
+  display: block;
 }
 
 .ourblog__title {
