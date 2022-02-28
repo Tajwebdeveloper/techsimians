@@ -1725,7 +1725,7 @@ main.container {
 }
 /* 4. Our Work */
 .workgrid {
-  padding: 0 16px;
+  padding: 0 16px 30px;
 }
 .workgrid__row {
   display: flex;
@@ -1908,7 +1908,7 @@ main.container {
   text-transform: uppercase;
 }
 .contact__form {
-  padding: 36px 16px 48px;
+  padding: 100px 16px 48px;
   display: grid;
   grid-gap: 10px;
 
