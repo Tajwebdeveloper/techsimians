@@ -1990,3 +1990,128 @@ main.container {
   }
 }
 /* 8. blog */
+.blog {
+  padding: 16px;
+}
+.blog__title {
+  font-size: 16px;
+  line-height: 20px;
+  margin: 12px 0;
+}
+.blog__meta {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.blog__date {
+  display: flex;
+  align-items: center;
+}
+.blog__date:before {
+  content: "";
+  display: inline-flex;
+  background: black;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.blog__excerpt {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 30px;
+}
+.blog h2 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 20px;
+}
+.blog p {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.blog__date,
+.blog__by span {
+  opacity: 0.5;
+}
+.blognav {
+  padding: 16px;
+  margin-bottom: 20px;
+}
+.blognav__button {
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  background-color: #fff;
+  color: black;
+  padding: 0px 10px;
+  border-radius: 50px;
+  display: inline-flex;
+}
+.blognav__row {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.blognav__item {
+  background-color: var(--color-primary);
+  padding: 16px;
+  border-radius: 10px;
+  color: #fff;
+}
+.blognav__title {
+  font-weight: bold;
+  margin: 4px 0 10px;
+  font-size: 16px;
+}
+.blognav__content {
+  font-size: 10px;
+  line-height: 16px;
+  margin: 0;
+}
+@media (min-width: 992px) {
+  .blog__title {
+    font-size: 60px;
+    line-height: 70px;
+    margin-top: 80px;
+  }
+  .blog__meta {
+    font-size: 16px;
+  }
+  .blog h2 {
+    font-size: 30px;
+    line-height: 34px;
+  }
+  .blog p,
+  .blog__excerpt {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .blognav__row {
+    flex-direction: row;
+    margin-bottom: 90px;
+  }
+  .blognav__button {
+    font-size: 14px;
+    line-height: 26px;
+  }
+  .blognav__title {
+    font-size: 35px;
+    line-height: 44px;
+  }
+  .blognav__item {
+    padding: 40px;
+  }
+  .blognav__content {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
