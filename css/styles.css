@@ -194,6 +194,9 @@ input[type="file" i]::-webkit-file-upload-button {
   line-height: 13px;
 }
 @media (min-width: 992px) {
+  .openings {
+    margin-bottom: 100px;
+  }
   .opening__title {
     font-size: 26px;
     line-height: 39px;
@@ -245,11 +248,14 @@ input[type="file" i]::-webkit-file-upload-button {
 @media (min-width: 992px) {
   .breadcrumb {
     display: flex;
+    margin-top: 100px;
   }
 }
 
 /* #endregion */
-
+main.container{
+  padding-top: 80px
+}
 .container {
   max-width: 1204px;
   margin: auto;
@@ -290,6 +296,9 @@ input[type="file" i]::-webkit-file-upload-button {
     backdrop-filter: blur(20px);
     z-index: 10;
     padding: 0;
+  }
+  main.container{
+    padding-top: 0;
   }
   .navigation {
     height: 81px;
@@ -444,6 +453,9 @@ input[type="file" i]::-webkit-file-upload-button {
 }
 .logo img {
   display: flex;
+}
+.navigation__item.active {
+  color: var(--color-primary);
 }
 @media (min-width: 992px) {
   .navigation__menu {
@@ -1452,6 +1464,12 @@ input[type="file" i]::-webkit-file-upload-button {
 }
 
 @media (min-width: 992px) {
+  .about {
+    margin-top: 120px;
+  }
+  .team {
+    margin-top: 160px;
+  }
   .team__row {
     grid-template-columns: repeat(auto-fit, 215px);
     grid-gap: 70px;
@@ -1549,7 +1567,11 @@ input[type="file" i]::-webkit-file-upload-button {
 }
 
 /* 3. Services */
+.service {
+  display: flex;
 
+  flex-direction: column-reverse;
+}
 .service__img {
   margin: 26px 36px;
 }
@@ -1564,8 +1586,7 @@ input[type="file" i]::-webkit-file-upload-button {
     margin: 0;
   }
   .service {
-    display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     align-items: center;
     gap: 80px;
     margin: 160px 0 80px;
