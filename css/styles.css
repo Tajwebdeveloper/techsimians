@@ -1750,11 +1750,18 @@ main.container {
   display: flex;
 }
 @media (min-width: 992px) {
+  .workgrid {
+    margin-bottom: 100px;
+  }
   .workgrid__row {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 78px;
     grid-column-gap: 26px;
+  }
+  .workgrid .subheading {
+    font-size: 18px;
+    line-height: 38px;
   }
 }
 /* 5. Single Project */
