@@ -126,7 +126,7 @@ input[type="file" i]::-webkit-file-upload-button {
   font-size: 10px;
   line-height: 15px;
   letter-spacing: 0.01em;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .input__field {
@@ -1930,10 +1930,29 @@ main.container {
 .contact .button {
   box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
 }
+.contact__item:not(:last-child) .contact__item-icon::after {
+  content: "";
+  height: 100px;
+  width: 100%;
+  display: block;
+  background: url("data:image/svg+xml,%3Csvg width='3' height='52' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.5 1a1 1 0 0 0-2 0h2Zm-2 50a1 1 0 1 0 2 0h-2Zm0-50a1 1 0 0 0 2 0h-2Zm2 6.2a1 1 0 0 0-2 0h2Zm-2 .1a1 1 0 0 0 2 0h-2Zm2 6.1a1 1 0 1 0-2 0h2Zm-2 .2a1 1 0 1 0 2 0h-2Zm2 6.1a1 1 0 1 0-2 0h2Zm-2 .1a1 1 0 1 0 2 0h-2Zm2 6.1a1 1 0 1 0-2 0h2Zm-2 .2a1 1 0 1 0 2 0h-2Zm2 6.1a1 1 0 1 0-2 0h2Zm-2 .1a1 1 0 1 0 2 0h-2Zm2 6.1a1 1 0 1 0-2 0h2Zm-2 .2a1 1 0 1 0 2 0h-2Zm2 6.1a1 1 0 1 0-2 0h2Zm-2 .1a1 1 0 1 0 2 0h-2Zm2 6.1a1 1 0 1 0-2 0h2ZM.5 1h2-2Zm0 6.2v.1h2v-.1h-2Zm0 6.2v.2h2v-.2h-2Zm0 6.3v.1h2v-.1h-2Zm0 6.2v.2h2v-.2h-2Zm0 6.3v.1h2v-.1h-2Zm0 6.2v.2h2v-.2h-2Zm0 6.3v.1h2v-.1h-2Zm0 6.2v.1h2-2Z' fill='%23000'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center top;
+  position: absolute;
+  top: 100%;
+  background-size: auto 38px;
+}
+.contact__item-icon {
+  position: relative;
+}
 @media (min-width: 992px) {
   .contact {
     padding: 120px 0;
   }
+  .contact__item:not(:last-child) .contact__item-icon::after {
+    background-size: initial;
+  }
+
   .contact__title {
     font-size: 64px;
     line-height: 64px;
