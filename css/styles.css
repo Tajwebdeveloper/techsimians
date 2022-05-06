@@ -1797,6 +1797,7 @@ main.container {
 /* 5. Single Project */
 
 .project {
+  margin-top:80px;
 }
 .project__title {
   font-size: 20px;
@@ -1825,6 +1826,9 @@ main.container {
   width: 100%;
 }
 @media (min-width: 992px) {
+  .project{
+    margin-top:0px;
+  }
   .project__grid {
     grid-gap: 16px;
   }
